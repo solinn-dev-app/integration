@@ -9,8 +9,9 @@
 
 ## Setup
 - Clone the project:
-  - http: https://github.com/solinn-dev-app/integration.git
-  - git branch [firstname-lastname]
+  - git clone https://github.com/solinn-dev-app/integration.git
+  - git fetch origin
+  - git checkout [firstname-lastname]
   
 ## Why this test
 - The main goal of this test, is to visualize how you would solve it.
