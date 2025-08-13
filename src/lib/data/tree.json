@@ -1,0 +1,410 @@
+{
+  "_id": "ecfd0cce-ea7f-4e10-bbad-4df2d9007c9b",
+  "key": "home-root-block",
+  "component": "block",
+  "props": {
+    "className": "min-h-screen flex flex-col items-center justify-center bg-slate-50 px-4"
+  },
+  "children": [
+    {
+      "_id": "e2be23e7-5d4e-476b-b4f6-31264dcfa76a",
+      "key": "home-header-block",
+      "component": "block",
+      "props": {
+        "className": "mb-10 max-w-2xl text-center"
+      },
+      "children": [
+        {
+          "_id": "22da5ace-301b-4b4f-8e76-2571c107f592",
+          "key": "home-headline",
+          "component": "text",
+          "params": {
+            "variant": "h1",
+            "text": "Welcome to ESN Company Timesheet & Billing Management"
+          },
+          "props": {
+            "className": "text-3xl md:text-4xl font-bold text-gray-900 font-sans mb-2"
+          }
+        },
+        {
+          "_id": "beaa857c-9442-4218-b5a3-eb50246b6b0e",
+          "key": "home-subheading",
+          "component": "text",
+          "params": {
+            "variant": "p",
+            "text": "Track hours, manage projects and contracts, invoice clients, and keep everything auditable – all in one user-friendly platform."
+          },
+          "props": {
+            "className": "text-lg md:text-xl text-gray-700 mb-2"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "645c1098-cd6a-4db7-8bd9-13b1b51cf10e",
+      "key": "cta-block",
+      "component": "block",
+      "props": {
+        "className": "mb-12 flex flex-col md:flex-row gap-4 justify-center"
+      },
+      "children": [
+        {
+          "_id": "1acb5116-5e5e-4f94-ac70-d733bba54b8b",
+          "key": "login-link",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/auth/login/",
+            "className": "inline-flex items-center px-6 py-3 text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-md shadow transition-colors"
+          },
+          "params": {
+            "text": "Sign In"
+          }
+        },
+        {
+          "_id": "a0690132-913b-460b-a41b-227bfaf32b97",
+          "key": "dashboard-link",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/dashboard/",
+            "className": "inline-flex items-center px-6 py-3 text-base font-semibold bg-white border border-blue-600 text-blue-600 rounded-md shadow hover:bg-blue-600 hover:text-white transition-colors"
+          },
+          "params": {
+            "text": "Go to Dashboard"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "e1a474b1-ae40-4daa-bc26-a90e35f2f317",
+      "key": "quick-nav-block",
+      "component": "block",
+      "props": {
+        "className": "w-full max-w-3xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
+      },
+      "children": [
+        {
+          "_id": "73d8cd9d-eb6e-4101-b0fe-0e5767187a3c",
+          "key": "quicknav-timesheets",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/timesheets/",
+            "className": "group bg-white shadow-sm border border-gray-100 rounded-lg p-5 flex flex-col items-center transition hover:shadow-md hover:bg-blue-50"
+          },
+          "children": [
+            {
+              "_id": "b72fe9e0-146c-4b92-bd42-86ba4e782ab8",
+              "key": "quicknav-timesheets-icon",
+              "component": "icon",
+              "params": {
+                "icon": "clock"
+              },
+              "props": {
+                "className": "text-blue-600 text-3xl mb-2"
+              }
+            },
+            {
+              "_id": "961f08d4-ba84-476b-bbed-13545df0d861",
+              "key": "timesheets-title",
+              "component": "text",
+              "params": {
+                "variant": "h3",
+                "text": "Timesheets"
+              },
+              "props": {
+                "className": "text-lg font-semibold text-gray-900 mb-1"
+              }
+            },
+            {
+              "_id": "e09d4b2d-caf2-4c48-b6a9-bd213f4f3f62",
+              "key": "timesheets-desc",
+              "component": "text",
+              "params": {
+                "variant": "p",
+                "text": "Manage, submit, and approve work hours."
+              },
+              "props": {
+                "className": "text-sm text-gray-700 text-center"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "5ee351d3-0dfa-4d3e-853a-bb0cf4ae7d45",
+          "key": "quicknav-projects",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/projects/",
+            "className": "group bg-white shadow-sm border border-gray-100 rounded-lg p-5 flex flex-col items-center transition hover:shadow-md hover:bg-blue-50"
+          },
+          "children": [
+            {
+              "_id": "2f0c3d96-2ae4-494f-aa38-febad2c0b3c8",
+              "key": "quicknav-projects-icon",
+              "component": "icon",
+              "params": {
+                "icon": "diagram-project"
+              },
+              "props": {
+                "className": "text-blue-600 text-3xl mb-2"
+              }
+            },
+            {
+              "_id": "1862760e-0e13-4fda-8bca-47fda56fa498",
+              "key": "projects-title",
+              "component": "text",
+              "params": {
+                "variant": "h3",
+                "text": "Projects"
+              },
+              "props": {
+                "className": "text-lg font-semibold text-gray-900 mb-1"
+              }
+            },
+            {
+              "_id": "bd54d87f-8e5c-40bf-bdc3-da0f841dbaeb",
+              "key": "projects-desc",
+              "component": "text",
+              "params": {
+                "variant": "p",
+                "text": "View and manage all ongoing client projects."
+              },
+              "props": {
+                "className": "text-sm text-gray-700 text-center"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "887c6f36-061e-4eeb-bd1b-1c12b386ef15",
+          "key": "quicknav-invoices",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/invoices/",
+            "className": "group bg-white shadow-sm border border-gray-100 rounded-lg p-5 flex flex-col items-center transition hover:shadow-md hover:bg-blue-50"
+          },
+          "children": [
+            {
+              "_id": "5f5eb028-60a2-4afb-b28b-3e369f4e5e43",
+              "key": "quicknav-invoices-icon",
+              "component": "icon",
+              "params": {
+                "icon": "file-invoice-dollar"
+              },
+              "props": {
+                "className": "text-blue-600 text-3xl mb-2"
+              }
+            },
+            {
+              "_id": "1efbcc29-01e5-4337-bc3e-2aafee3d97e2",
+              "key": "invoices-title",
+              "component": "text",
+              "params": {
+                "variant": "h3",
+                "text": "Invoices"
+              },
+              "props": {
+                "className": "text-lg font-semibold text-gray-900 mb-1"
+              }
+            },
+            {
+              "_id": "802ce065-47d4-4d7b-b8c5-b779bc7c112d",
+              "key": "invoices-desc",
+              "component": "text",
+              "params": {
+                "variant": "p",
+                "text": "Automate billing from approved timesheets."
+              },
+              "props": {
+                "className": "text-sm text-gray-700 text-center"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "af8f73bd-318a-4884-b6a4-23af68f9282d",
+          "key": "quicknav-clients",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/clients/",
+            "className": "group bg-white shadow-sm border border-gray-100 rounded-lg p-5 flex flex-col items-center transition hover:shadow-md hover:bg-blue-50"
+          },
+          "children": [
+            {
+              "_id": "c5e5dbdc-2500-491f-81d2-f0c964acecc3",
+              "key": "quicknav-clients-icon",
+              "component": "icon",
+              "params": {
+                "icon": "user-tie"
+              },
+              "props": {
+                "className": "text-blue-600 text-3xl mb-2"
+              }
+            },
+            {
+              "_id": "e5087271-df51-4025-91e0-414960c519d1",
+              "key": "clients-title",
+              "component": "text",
+              "params": {
+                "variant": "h3",
+                "text": "Clients"
+              },
+              "props": {
+                "className": "text-lg font-semibold text-gray-900 mb-1"
+              }
+            },
+            {
+              "_id": "b990b914-7bb1-41cb-b219-fa1e67ef048f",
+              "key": "clients-desc",
+              "component": "text",
+              "params": {
+                "variant": "p",
+                "text": "Manage your client directory and contacts."
+              },
+              "props": {
+                "className": "text-sm text-gray-700 text-center"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "f6ee01a3-f196-4e8c-8747-b6e5531a0e38",
+          "key": "quicknav-contracts",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/contracts/",
+            "className": "group bg-white shadow-sm border border-gray-100 rounded-lg p-5 flex flex-col items-center transition hover:shadow-md hover:bg-blue-50"
+          },
+          "children": [
+            {
+              "_id": "d6b95209-cab6-40b2-b7c1-1a049573b949",
+              "key": "quicknav-contracts-icon",
+              "component": "icon",
+              "params": {
+                "icon": "file-contract"
+              },
+              "props": {
+                "className": "text-blue-600 text-3xl mb-2"
+              }
+            },
+            {
+              "_id": "85039800-8916-4ac8-95dd-6f04c3e247b1",
+              "key": "contracts-title",
+              "component": "text",
+              "params": {
+                "variant": "h3",
+                "text": "Contracts"
+              },
+              "props": {
+                "className": "text-lg font-semibold text-gray-900 mb-1"
+              }
+            },
+            {
+              "_id": "3a2b2e28-9769-4aa6-8c40-39e0b28f2ef3",
+              "key": "contracts-desc",
+              "component": "text",
+              "params": {
+                "variant": "p",
+                "text": "Link projects and clients, manage contract status."
+              },
+              "props": {
+                "className": "text-sm text-gray-700 text-center"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "3d6abca8-41d7-4022-b790-9dadbea309f1",
+          "key": "quicknav-auditlog",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/audit-log/",
+            "className": "group bg-white shadow-sm border border-gray-100 rounded-lg p-5 flex flex-col items-center transition hover:shadow-md hover:bg-blue-50"
+          },
+          "children": [
+            {
+              "_id": "273c9517-fc9c-4bf7-9c71-6a7e8e3acc03",
+              "key": "quicknav-auditlog-icon",
+              "component": "icon",
+              "params": {
+                "icon": "clipboard-list"
+              },
+              "props": {
+                "className": "text-blue-600 text-3xl mb-2"
+              }
+            },
+            {
+              "_id": "4a758bdb-4c3e-4b45-88a7-bbc4e382895f",
+              "key": "auditlog-title",
+              "component": "text",
+              "params": {
+                "variant": "h3",
+                "text": "Audit Log"
+              },
+              "props": {
+                "className": "text-lg font-semibold text-gray-900 mb-1"
+              }
+            },
+            {
+              "_id": "3ea7db09-d09c-45b1-b97d-2c98b3330f02",
+              "key": "auditlog-desc",
+              "component": "text",
+              "params": {
+                "variant": "p",
+                "text": "See tracked actions for compliance."
+              },
+              "props": {
+                "className": "text-sm text-gray-700 text-center"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "ed2bc715-a714-4173-8fe6-9cbfd5a77b7c",
+          "key": "quicknav-admin-users",
+          "component": "link",
+          "props": {
+            "href": "/esn-timesheet-billing/admin/users/",
+            "className": "group bg-white shadow-sm border border-gray-100 rounded-lg p-5 flex flex-col items-center transition hover:shadow-md hover:bg-blue-50"
+          },
+          "children": [
+            {
+              "_id": "ae876fa6-651d-41f1-9ae6-5bb49661f5b2",
+              "key": "quicknav-admin-users-icon",
+              "component": "icon",
+              "params": {
+                "icon": "users-gear"
+              },
+              "props": {
+                "className": "text-blue-600 text-3xl mb-2"
+              }
+            },
+            {
+              "_id": "068cbc56-b7b6-4b95-94b0-b2db5bb72007",
+              "key": "admin-users-title",
+              "component": "text",
+              "params": {
+                "variant": "h3",
+                "text": "Users / Admin"
+              },
+              "props": {
+                "className": "text-lg font-semibold text-gray-900 mb-1"
+              }
+            },
+            {
+              "_id": "6915df6a-92c9-4be4-853c-f5c199c77bc3",
+              "key": "admin-users-desc",
+              "component": "text",
+              "params": {
+                "variant": "p",
+                "text": "Manage team members and permissions."
+              },
+              "props": {
+                "className": "text-sm text-gray-700 text-center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
